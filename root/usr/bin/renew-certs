@@ -1,0 +1,7 @@
+#!/bin/bash
+
+CONFIGS=/etc/letsencrypt/conf.d/*.ini
+
+for CONFIG in ${CONFIGS[@]}; do
+    /usr/bin/certbot certonly --config $CONFIG
+done
