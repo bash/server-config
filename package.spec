@@ -18,7 +18,7 @@ install -d -m 0755 %{buildroot}/etc/letsencrypt/conf.d
 install -d -m 0755 %{buildroot}/usr/bin
 install -d -m 0755 %{buildroot}/etc/nginx/conf.d
 
-cp -R %{_builddir}/root/* %{buildroot}
+cp -R %{_builddir}/* %{buildroot}/
 
 %post
 [ ! -f /etc/nginx/dhparams.pem ] && openssl dhparam -out /etc/nginx/dhparams.pem 2048

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p $HOME/rpmbuild/SOURCES
-tar -zcvf $HOME/rpmbuild/SOURCES/root.tar.gz ./root
+rm $HOME/rpmbuild/SOURCES/root.tar.gz
+tar -zcvf $HOME/rpmbuild/SOURCES/root.tar.gz ./usr ./etc
 
 rpmbuild -bb package.spec
