@@ -30,4 +30,5 @@ fi
 /etc/systemd/system/*
 /etc/letsencrypt/conf.d/*
 /usr/bin/*
+/etc/nginx/*
 /etc/nginx/conf.d/*
