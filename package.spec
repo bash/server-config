@@ -25,10 +25,6 @@ cp -R %{_builddir}/* %{buildroot}/
 
 %files
 %defattr(-,root,root)
-%dir /etc/systemd/system
-%dir /etc/letsencrypt/conf.d
-%dir /usr/bin
-%dir /etc/nginx/conf.d
 /etc/systemd/system/*
 /etc/letsencrypt/conf.d/*
 /usr/bin/*
