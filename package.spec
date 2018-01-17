@@ -1,6 +1,6 @@
 Name: rubys-server-config
 Version: 1.0
-Release: 1
+Release: %{_release}
 Summary: Server config
 License: MIT
 Source0: root.tar.gz
