@@ -29,3 +29,6 @@ deploy:
   upload-dir: travis-builds/server-config
   on:
     repo: bash/server-config
+
+after_deploy:
+- curl -X POST $TOBY_URL
