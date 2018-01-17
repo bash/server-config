@@ -21,7 +21,9 @@ install -d -m 0755 %{buildroot}/etc/nginx/conf.d
 cp -R %{_builddir}/* %{buildroot}/
 
 %post
-[ ! -f /etc/nginx/dhparams.pem ] && openssl dhparam -out /etc/nginx/dhparams.pem 2048
+if [ ! -f /etc/nginx/dhparams.pem ]; then
+    openssl dhparam -out /etc/nginx/dhparams.pem 2048
+fi
 
 %files
 %defattr(-,root,root)
