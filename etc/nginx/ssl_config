@@ -3,3 +3,6 @@ ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA
 ssl_prefer_server_ciphers on;
 ssl_session_cache shared:SSL:10m;
 ssl_dhparam /etc/nginx/dhparams.pem;
+
+# force browser to use https for 180 days
+add_header Strict-Transport-Security max-age=15552000;

@@ -1,6 +1,3 @@
-# force browser to use https for 180 days
-add_header Strict-Transport-Security max-age=15552000;
-
 add_header X-Frame-Options deny;
 add_header X-Xss-Protection '1; mode=block';
 add_header X-Content-Type-Options nosniff;
