@@ -20,8 +20,6 @@ deploy:
     secure: Z5YFd2lWfBfFhnevrOvw2PI0bnfYK//c3eOHz0SL3ypBdvbjcLDO5/JRNmdaE2R99E4fKi49pwmDc+WLAyLuZqI1gdaEj8xKTHFcjXbG+y4pJr2Xp/dgOtZcncNl5ggM3V37rlFmFQrsfjLr382OHvKs0ka9a9L1rmZWrNsUlBnnlNtHZRRb8bHo4q5POLiNl//xSKFpGryxK3ePgb2hv2WLckc4KE/whHyIzRQYiBKFoy7WBIdJRKlzkq4Krpr/DB1cTGLOQGU5ikaSZsdh0LHZxwBYVoVrTNmhfoTRaA2Rx03NX2mndj2NpSPHe599EhpOOkgofXrZrBnO+/u26AMCkX8SQUHHYt7SArSH1fUz+pqdCpIdrz1jFjne0UXpVINZ1JW7RNjWGyZ/rac/MdM27FPIZLqANELHN9fNtmsLoocuKZjWJoSAi4h5JOo76QRCRcU6JR1nDLuWi9BFcU4cBZtR8bJoCSEYnyEyggPmlk7AeodhnxEqyxd9IXp9ikXQmL5KGNqV6D3ivKfSxd1/b82/zK44EmZa9BQl6N13GpK8Btnp/lvRloJjmSoOXxdgk2kqvLJHNjpnBeD6sPIpq0o6HxbbTXUZX8V+zJgyk+ORVRaWTemmiPy3Zu1S1Jz/JsnbTchNghLJKGis+xVBx30TszIgkeLO5H2ymd4=
   bucket: rschmidmeister
   region: nyc3
-  edge:
-    branch: ha-s3-endpoint
   endpoint: https://nyc3.digitaloceanspaces.com
   skip_cleanup: true
   acl: public_read
